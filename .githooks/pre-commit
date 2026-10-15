@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#
+# Gate 1 (structural): static validation before every commit.
+# Enable it once per clone, from the repository root:
+#
+#   git config --local core.hooksPath .githooks
+#
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+cd "$repo_root"
+
+echo "pre-commit: static validation of the marketplace"
+./scripts/validate.sh --strict
+
+echo "pre-commit: entry point parity"
+./scripts/check-entrypoint-parity.sh
+
+echo "pre-commit: OK"

@@ -1,0 +1,52 @@
+{
+    "name": "qualtio-plugins-marketplace",
+    "owner": {
+        "name": "qualtio",
+        "email": "info@qualt.io",
+        "url": "https://qualt.io"
+    },
+    "metadata": {
+        "description": "qualtio's plugin marketplace, compatible with GitHub Copilot (CLI and VS Code) and Claude Code.",
+        "version": "1.0.0"
+    },
+    "plugins": [
+        {
+            "name": "qualtio-conventional-commits",
+            "description": "Writes commit messages that follow Conventional Commits from the changes staged in the git index.",
+            "version": "1.0.0",
+            "source": "./plugins/qualtio-conventional-commits",
+            "author": {
+                "name": "qualtio",
+                "url": "https://qualt.io"
+            },
+            "keywords": [
+                "git",
+                "commits",
+                "conventional-commits",
+                "changelog"
+            ],
+            "category": "productivity",
+            "strict": true
+        },
+        {
+            "name": "qualtio-api-test-generator",
+            "description": "Generates REST API integration and contract tests by detecting the repository stack, reusing its conventions and using the OpenAPI specification as the source of truth when one exists.",
+            "version": "1.0.0",
+            "source": "./plugins/qualtio-api-test-generator",
+            "author": {
+                "name": "qualtio",
+                "url": "https://qualt.io"
+            },
+            "keywords": [
+                "testing",
+                "api",
+                "rest",
+                "openapi",
+                "integration-test",
+                "contract-test"
+            ],
+            "category": "quality",
+            "strict": true
+        }
+    ]
+}

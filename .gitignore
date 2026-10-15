@@ -1,0 +1,6 @@
+.DS_Store
+*.log
+__pycache__/
+
+# Articles and working notes: local, not part of the marketplace.
+docs/

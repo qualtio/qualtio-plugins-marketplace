@@ -1,0 +1,18 @@
+{
+    "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+    "name": "qualtio-conventional-commits",
+    "version": "1.0.0",
+    "description": "Writes commit messages that follow Conventional Commits from the changes staged in the git index.",
+    "author": {
+        "name": "qualtio",
+        "url": "https://qualt.io"
+    },
+    "homepage": "https://qualt.io",
+    "license": "MIT",
+    "keywords": [
+        "git",
+        "commits",
+        "conventional-commits",
+        "changelog"
+    ]
+}

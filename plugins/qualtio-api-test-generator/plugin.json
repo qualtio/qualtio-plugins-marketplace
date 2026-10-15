@@ -1,0 +1,20 @@
+{
+    "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+    "name": "qualtio-api-test-generator",
+    "version": "1.0.0",
+    "description": "Generates REST API integration and contract tests by detecting the repository stack, reusing its conventions and using the OpenAPI specification as the source of truth when one exists.",
+    "author": {
+        "name": "qualtio",
+        "url": "https://qualt.io"
+    },
+    "homepage": "https://qualt.io",
+    "license": "MIT",
+    "keywords": [
+        "testing",
+        "api",
+        "rest",
+        "openapi",
+        "integration-test",
+        "contract-test"
+    ]
+}
